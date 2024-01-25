@@ -1,0 +1,24 @@
+PROJEDEN NE ANLADIM ?
+Bir Ön Uç Geliştiricileri olarak en çok karşılaştığım senaryonun kullanıcının herhangibi alandaki ve amaçtaki
+datalarını görmek editlemek ve güncellemek olduğunu söyleyebilirim.
+
+Task Projesi de bunun bir örneğiydi. Elbetteki gelişmiş projelerde daha da karmaşık durumlarla karşılaşmaktayız.
+Bu karışıklıkları yönetmedeki düşünce ve yaklaşımlarımı proejye yansıtmaya çalıştım. Moduler ve standartlara uygun
+geliştirme yaparak sürdürebilirlik ve ekip çalışmasına verdiğim önemi yansıtmaya gayret ettim. 
+Bunları yaparken de Angular'ın bizlere sunmuş olduğu yapıları ve bileşenleri uygn biçimde kullanmaya çalıştım. Senaryoyu daha da gerçekçi
+kılmak adına json-server adlı npm paketini kullanarak bir rest servis varmış gibi kodlarımı geliştirdim.
+Herhangibi sebepten ötürü bakcend servislerinin hazır olmadığı projelerde tasarıma başlamak adına bu yolu izleyebiliyorum.
+
+TEKNİK ADIMLAR
+1-) Projeye bir app servise entegre ederek srevisten aldığım dataları componentlere servis ettim. Bunu yaparken Anguların 
+httpClient modulunu kullandım. Arka planda rxjs'in sunmuş olduğu observable yapıyı kullanmakta.
+2-) Genel flex-grid yapımı ve responsive navbarımı oluşturmak ve hız kazanmak adına bootstrap navbar yapısını 
+tercih ettim. Projede kullanılacak UI kütüphanesine göre bu noktada farklı seçimler yapılabilir. B
+3-) Datagrid yapısı için task notlarınla iletmiş olduğunuz dexExtrme kütüphanesi kullandım. Bu kütüphaneyi ilk defa kullanıyorum.
+Bu sebepten dökümantasyonla birlikte ilerledim. Proje bittiğinde kütüphanenin genel yapısını ve bileşen davranışlarını
+temelde anladığımı söyleyebilirim.
+4-) Datagrid yapısı ile servis datalarımı da entegre ettikten sonra projedei genel görünümüm tamamlanmış oldu. Bu süreçte sürekli
+olarak css yapılarını da düzenliyor haldeydim.
+5-) Action Butonların da uygulamaya eklenmesiyle yeni veri ekleme, locale kaydetme gibi işlem adımlarını gerçekleştirdim. Bu esnada
+Form yapımı ve form validasyonunu oluşturdum.
+6-) Genel olarak uygulamayı test ettikten sonra (kullanarak) gördüğüm ufak bugları fix ederek projeyi tamamladım.
