@@ -1,1 +1,52 @@
-<p>data-grid works!</p>
+<dx-data-grid [rowAlternationEnabled]="true" [dataSource]="socialMedialist">
+  [allowColumnReordering]="true"
+  [columnAutoWidth]="true"
+  [wordwreapenabled]="true"
+  [filterRow.visible]="true">
+  <dxo-search-panel [visible]="true" [width]="240" placeholder="Arayınız..."></dxo-search-panel>
+  <dxo-filter-panel [visible]="true" applyFilter="auto"></dxo-filter-panel>
+
+  <!--columns-->
+  <dxi-column caption="Sosyal Medya Linki" dataField="link"></dxi-column>
+  <dxi-column caption="Sosyal Medya Adi" dataField="name"></dxi-column>
+  <dxi-column heigth="500" [width]="500" caption="Açıklama" dataField="description"></dxi-column>
+
+  <dxo-toolbar >
+    <dxi-item name="addRowButton"></dxi-item>
+    <dxi-item name="searchPanel"></dxi-item>
+    <dxi-item [visible]="true" applyFilter="onClick" name="applyFilterButton"></dxi-item>
+    <dxi-item location="after">
+      <div *dxTemplate>
+        <dx-button [icon]="'add'" [text]="'Ekle'">
+        </dx-button>
+      </div>
+    </dxi-item>
+    <dxi-item name="columnChooserButton"></dxi-item>
+  </dxo-toolbar>
+
+  <!-- pagi-->
+  <dxo-paging [pageSize]="5"> </dxo-paging>
+  <dxo-pager [visible]="true" [showPageSizeSelector]="true" [showInfo]="true" [showNavigationButtons]="true">
+  </dxo-pager>
+</dx-data-grid>
+<dx-popup
+    contentTemplate="popup-content"
+    [(visible)]="isPopupVisible"
+    [hideOnOutsideClick]="true">
+    <div *dxTemplate="let data of 'popup-content'">
+        <img src="assets/images/dx-logo.png" alt="logo">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Penatibus et magnis dis parturient. Eget dolor morbi non arcu risus. Tristique magna sit amet purus gravida quis blandit.
+            Auctor urna nunc id cursus metus aliquam eleifend mi in. Tellus orci ac auctor augue mauris augue neque gravida. Nullam vehicula ipsum a arcu.
+            Nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi. Cursus in hac habitasse platea dictumst. Egestas dui id ornare arcu.
+            Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim.
+        </p>
+        <p>
+            Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Neque volutpat ac tincidunt vitae semper quis lectus.
+            Sed sed risus pretium quam vulputate dignissim suspendisse in. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar.
+            Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Amet cursus sit amet dictum sit amet justo donec enim.
+            Vestibulum rhoncus est pellentesque elit ullamcorper. Id aliquet risus feugiat in ante metus dictum at.
+        </p>
+    </div>
+</dx-popup>

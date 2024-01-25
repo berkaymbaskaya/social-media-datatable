@@ -1,7 +1,14 @@
 <div class="menu-container">
-  @for (item of menuList; track $index) {
-    <span class="item"> 
-      {{item.title}}</span>
+    <ul class="navbar-nav">
+      @for (item of menuList; track $index) {
+        <li class="nav-item">
+          <a style="color: black;" class="nav-link" aria-current="page" [routerLink]="item.redirect">{{item.title}}</a>
+        </li>
+      }
 
-  }
+     
+    </ul>
+ 
+
+  
 </div>

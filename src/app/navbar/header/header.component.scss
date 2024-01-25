@@ -1,13 +1,10 @@
 .container{
     display: flex;
     padding: 2rem 1rem 1rem 1rem;
+  
 }
-.left-side{
-    width: 15%;
-}
-.center{
-    width: 70%;
-}
-.right-side{
-    width: 15%;
+@media screen and (max-width:768px) {
+    .right-side{
+        display: none;
+    }
 }

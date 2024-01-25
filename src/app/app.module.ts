@@ -10,6 +10,13 @@ import { SocialMediaListComponent } from './components/social-media-list/social-
 import { HttpClientModule } from '@angular/common/http';
 import { DataGridComponent } from './components/data-grid/data-grid.component';
 
+import {
+  DxDataGridModule,
+  DxTemplateModule,
+  DxSelectBoxModule,
+  DxButtonModule,
+  DxPopupModule
+} from 'devextreme-angular';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +29,12 @@ import { DataGridComponent } from './components/data-grid/data-grid.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    DxDataGridModule,
+    DxTemplateModule,
+    DxSelectBoxModule,
+    DxButtonModule,
+    DxPopupModule
   ],
   providers: [],
   bootstrap: [AppComponent]

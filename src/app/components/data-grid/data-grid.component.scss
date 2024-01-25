@@ -1,0 +1,6 @@
+#dataGrid {
+    height: 500px;
+}
+.dx-datagrid .dx-row-alt > td, .dx-datagrid .dx-row-alt > tr > td {
+    background-color: red !important;
+}

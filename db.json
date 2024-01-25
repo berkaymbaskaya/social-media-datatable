@@ -2,26 +2,33 @@
     "socialMedia":[
             {
               "icon":"../../assets/youtube.png",
-              "link":"abc"
+              "link":"twitter.com/rastmobile",
+              "name":"twitter",
+              "description":"Software Development Agency Rast Mobile Information Technology Ltd."
             },
             {
               "icon":"../../assets/insta.png",
-              "link":"abc"
+              "link":"instagram.com/mobilerast/",
+              "name":"instagram",
+              "description":"We'll help you to finish your development project successfully."
             },
             {
               "icon":"../../assets/be.png",
-              "link":"abc"
+              "link":"behance.net/rastmobile",
+              "name":"behance",
+              "description":"Software Development Agency Rast Mobile Information Technology Ltd."
             }
             , {
               "icon":"../../assets/linkedin.png",
-              "link":"abc"
-            }
-          
+              "link":"tr.linkedin.com/company/rastmobile",
+              "name":"linkedin",
+              "description":"Hire vetted developers from Rast Mobile to scale up your tech projects."
+            }       
     ],
     "menuList":[
-      {"title":"Hakkımızda" ,"redirect":""},
-      {"title":"Jüri - Yarışma Yazılımı" ,"redirect":""},
-      {"title":"Hakkımızda" ,"redirect":""},
-      {"title":"Word Pyramids" ,"redirect":""}
+      {"title":"Hakkımızda" ,"redirect":"/"},
+      {"title":"Jüri - Yarışma Yazılımı" ,"redirect":"/"},
+      {"title":"Hakkımızda" ,"redirect":"/"},
+      {"title":"Word Pyramids" ,"redirect":"/"}
     ]
 }
