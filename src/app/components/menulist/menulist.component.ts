@@ -8,18 +8,32 @@ import { Subscription } from 'rxjs';
   styleUrl: './menulist.component.scss'
 })
 export class MenulistComponent {
-  menuListSubscription?:Subscription;
-  menuList:menuListModel[]=[]
-  constructor(private appService:AppService){
+  menuListSubscription?: Subscription;
+  menuList: menuListModel[] = []
+  constructor(private appService: AppService) {
 
   }
-  ngOnInit(){
-    this.menuListSubscription = this.appService.getMenuList().subscribe((res:menuListModel[])=>{
-      console.log(res)
-      this.menuList=res;
+  ngOnInit() {
+    // this.menuListSubscription = this.appService.getMenuList().subscribe((res:menuListModel[])=>{
+    //   console.log(res)
+    //   this.menuList=res;
+    // })
+
+
+    this.menuListSubscription = this.appService.getMenuList().subscribe({
+      next: (res: menuListModel[]) => {
+        console.log(res)
+        this.menuList = res;
+      },
+      error: (e) => {
+        console.log(e)
+      }
     })
+
   }
-  ngOnDestroy(){
+
+
+  ngOnDestroy() {
     this.menuListSubscription?.unsubscribe();
   }
 }

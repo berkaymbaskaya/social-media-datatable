@@ -1,6 +1,8 @@
 <div style="display: flex;align-items: center;justify-content: center;">
   @for (item of socialMedialist; track $index) {
-    <img class="social-icon" [src]="item.icon">
+    <a [href]="'https://www.' + item.link" target="_blank">
+      <img *ngIf="item.icon" class="social-icon" [src]="item.icon">
+    </a>
 
   }
   </div>

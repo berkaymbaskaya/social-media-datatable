@@ -1,0 +1,16 @@
+<form  >
+    <div >
+        <label for="exampleFormControlInput1" class="form-label">Adı*</label>
+        <input (keyup.enter)="submitForm()" name="name" [(ngModel)]="newData.name" [ngModelOptions]="{standalone: true}"  type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div >
+        <label for="exampleFormControlInput1" class="form-label"> Linki*</label>
+        <input (keyup.enter)="submitForm()" name="link"  [(ngModel)]="newData.link" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="exampleFormControlInput1" placeholder="https://..example.com">
+      </div>
+      <div>
+        <label for="exampleFormControlTextarea1" class="form-label">Açıklama*</label>
+        <textarea (keyup.enter)="submitForm()" name="description"  [(ngModel)]="newData.description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <button  (click)="submitForm()" class="btn text-white"> Ekle </button>
+
+</form>

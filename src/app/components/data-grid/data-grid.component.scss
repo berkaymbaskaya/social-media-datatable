@@ -1,6 +1,20 @@
+@import '../../../styles.scss';
 #dataGrid {
     height: 500px;
 }
-.dx-datagrid .dx-row-alt > td, .dx-datagrid .dx-row-alt > tr > td {
-    background-color: red !important;
+
+.dx-datagrid-headers .dx-datagrid-table .dx-row > td {
+    border-bottom: 1px solid $rastmobile!important;
+    font-weight: 500!important;
+    color: black!important;
+
+}
+
+.dx-button{
+    background-color: $rastmobile-dark!important;
+    color:white
+   
+}
+.dx-icon {
+    color: white!important;
 }

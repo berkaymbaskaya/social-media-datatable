@@ -12,11 +12,13 @@ export class SocialMediaListComponent {
   socialMedialist:socailMediaModel[] = []
   socialMedialistSubscription?:Subscription;
   ngOnInit(){
-    this.socialMedialistSubscription= this.appService.getSocialList().subscribe((res:socailMediaModel[])=>{
-      console.log(res);
-      this.socialMedialist=res;
+    this.socialMedialistSubscription=this.appService.dataFetched.subscribe({
+      next:(data:socailMediaModel[])=>{
+        this.socialMedialist=data;
+      }
     })
   }
+
   ngOnDestroy(){
     this.socialMedialistSubscription?.unsubscribe();
   }
