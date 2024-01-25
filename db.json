@@ -1,0 +1,27 @@
+{
+    "socialMedia":[
+            {
+              "icon":"../../assets/youtube.png",
+              "link":"abc"
+            },
+            {
+              "icon":"../../assets/insta.png",
+              "link":"abc"
+            },
+            {
+              "icon":"../../assets/be.png",
+              "link":"abc"
+            }
+            , {
+              "icon":"../../assets/linkedin.png",
+              "link":"abc"
+            }
+          
+    ],
+    "menuList":[
+      {"title":"Hakkımızda" ,"redirect":""},
+      {"title":"Jüri - Yarışma Yazılımı" ,"redirect":""},
+      {"title":"Hakkımızda" ,"redirect":""},
+      {"title":"Word Pyramids" ,"redirect":""}
+    ]
+}
