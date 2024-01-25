@@ -22,3 +22,5 @@ olarak css yapılarını da düzenliyor haldeydim.
 5-) Action Butonların da uygulamaya eklenmesiyle yeni veri ekleme, locale kaydetme gibi işlem adımlarını gerçekleştirdim. Bu esnada
 Form yapımı ve form validasyonunu oluşturdum.
 6-) Genel olarak uygulamayı test ettikten sonra (kullanarak) gördüğüm ufak bugları fix ederek projeyi tamamladım.
+NOT: Projeyi 13 inç ekrana sahip macbook üzerinden geliştirdim. Geniş ekranlardaki css görünümlerini canlı görme imkanım olmadı. mobil responsive
+için chrome devTool kullandım
